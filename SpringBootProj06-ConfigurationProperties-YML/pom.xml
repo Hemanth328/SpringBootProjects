@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.org</groupId>
-	<artifactId>SpringBootProj06-ConfigurationProperties-YML</artifactId>
+	<artifactId>SpringBootProj07-ConfigurationProperties-YML</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SpringBootProj06-ConfigurationProperties-YML</name>
 	<description>Demo project for Spring Boot</description>
