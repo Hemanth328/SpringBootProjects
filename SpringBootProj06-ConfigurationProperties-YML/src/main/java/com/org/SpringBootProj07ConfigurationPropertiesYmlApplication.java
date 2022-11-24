@@ -8,10 +8,10 @@ import org.springframework.context.ConfigurableApplicationContext;
 import com.org.sbeans.Customer;
 
 @SpringBootApplication
-public class SpringBootProj06ConfigurationPropertiesYmlApplication {
+public class SpringBootProj07ConfigurationPropertiesYmlApplication {
 
 	public static void main(String[] args) {
-		ApplicationContext ctx = SpringApplication.run(SpringBootProj06ConfigurationPropertiesYmlApplication.class, args);
+		ApplicationContext ctx = SpringApplication.run(SpringBootProj07ConfigurationPropertiesYmlApplication.class, args);
 		
 		Customer cust = ctx.getBean("cust", Customer.class);
 		System.out.println(cust);
