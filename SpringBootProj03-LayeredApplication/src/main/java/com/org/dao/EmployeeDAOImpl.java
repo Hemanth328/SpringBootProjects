@@ -24,6 +24,8 @@ public class EmployeeDAOImpl implements IEmployeeDAO{
     @Override
     public List<Employee> getEmployeeByDesignation(String desg1, String desg2, String desg3) throws Exception {
 
+    	System.out.println("Datasource class name "+dataSource.getClass());
+    	
         List<Employee> list = null;
         try(Connection con = dataSource.getConnection();
              PreparedStatement ps = con.prepareStatement(GET_EMP_BY_DESG)){
@@ -36,7 +38,7 @@ public class EmployeeDAOImpl implements IEmployeeDAO{
 
             try(ResultSet rs = ps.executeQuery()){
 
-                list = new ArrayList<>();
+                list = new ArrayList<Employee>();
                 while (rs.next()){
                     Employee emp = new Employee();
                     emp.setEno(rs.getInt(1));
@@ -44,7 +46,6 @@ public class EmployeeDAOImpl implements IEmployeeDAO{
                     emp.setDesg(rs.getString(3));
                     emp.setSalary(rs.getDouble(4));
                     emp.setDeptno(rs.getInt(5));
-
                     list.add(emp);
                 }
             }
