@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: system
+    password: Hemanth11
+    hikari:
+      maximum-pool-size: '100'
+      connection-timeout: '60000'
+      minimum-idle: '10'
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    

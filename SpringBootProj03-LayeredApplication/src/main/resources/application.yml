@@ -1,0 +1,14 @@
+spring:
+   datasource:
+      driver-class-name: oracle.jdbc.driver.OracleDriver
+      url: jdbc:oracle:thin:@localhost:1521:orcl
+      username: system
+      password: Hemanth11
+      type: oracle.ucp.jdbc.PoolDataSourceImpl
+
+#Specify DataSource Type
+# spring.datasource.type = org.apache.tomcat.jdbc.pool.DataSource
+
+c3p0:
+   minsize: 10
+   maxsize: 100

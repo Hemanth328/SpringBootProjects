@@ -1,0 +1,38 @@
+org:
+   com:
+      #for simple properties
+      eno: 101
+      ename: Hemanth
+      
+      # for array property
+      favColours:
+         - red
+         - green
+         - blue
+       
+      #for List Collection
+      nick-names:  #indexed based priority will be given to index based
+         - chinna1
+         - kanna1
+         - vinny1
+      nickNames: [chinna,kanna,vinny]   # inline formatting
+         
+      #for Set Collection
+      phoneNumbers:
+         - 999999999
+         - 888888888
+         - 7777777777
+         
+      #for Map Collection
+      idDetails:
+         aadhar: 123456789102
+         voter:  347575SDFHS2
+         panNo:  ABCDEF1234GH
+         
+      #for HAS-A Property
+      company:
+          id: 89053
+          name: TCS
+          addrs: Hyd
+          size: 500
+      
