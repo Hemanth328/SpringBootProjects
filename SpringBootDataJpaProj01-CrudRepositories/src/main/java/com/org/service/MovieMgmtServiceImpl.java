@@ -2,7 +2,6 @@ package com.org.service;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 
@@ -236,10 +235,15 @@ public class MovieMgmtServiceImpl implements IMovieMgmtService {
 	
 	@Override
 	public String removeMoviesByListOfIds(List<Integer> deleteMoviesList) {
-		 movierepo.deleteAllById(deleteMoviesList);
-		return null;
-	}
-	
-     
-     
+		 Iterable<Movie> it = movierepo.findAllById(deleteMoviesList);
+		 
+		 long count = (((List<Movie>) it).size());
+		 
+		 if(deleteMoviesList.size() !=0 && deleteMoviesList.size() == count) {
+			 movierepo.deleteAllById(deleteMoviesList);
+			 return ((List<Movie>) it).size() + " Number of Records are deleted";
+		 } else {
+			 return "No Ids are given to delete or either all or some ids are not available to delete";
+		 }
+	}  
 }

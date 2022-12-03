@@ -4,7 +4,6 @@ import com.org.model.Employee;
 
 import java.util.List;
 
-import org.springframework.stereotype.Component;
 
 public interface IEmployeeDAO {
 

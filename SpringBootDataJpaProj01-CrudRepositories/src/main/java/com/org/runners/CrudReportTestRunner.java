@@ -1,9 +1,6 @@
 package com.org.runners;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -216,6 +213,20 @@ public class CrudReportTestRunner implements CommandLineRunner {
 				e.printStackTrace();
 			}
 			*/
+	     
+	     
+	     System.out.println("\n=========================Delete Movies By List Of Id's======================================\n");
+			
+			
+			try {
+			System.out.println(service.removeMoviesByListOfIds(List.of(1956,1957)));
+			} catch(NullPointerException e) {
+				e.printStackTrace();
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+			
+	     
 		
 	}
 
