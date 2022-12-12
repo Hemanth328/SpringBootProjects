@@ -20,6 +20,10 @@ import lombok.RequiredArgsConstructor;
 @Table(name = "MOVIE_REPO")
 public class Movie implements Serializable {
 	
+	
+	// Din't use this property any where
+	private static final long serialVersionUID = 1L;
+	
 	@Id
 	@Column(name = "MID")
 	@GeneratedValue(strategy = GenerationType.AUTO)
