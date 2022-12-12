@@ -131,29 +131,19 @@ public class CrudReportTestRunner implements CommandLineRunner {
 		
 		System.out.println("\n==========================Saving all the Movies======================================\n");
 		
-		/*
+		
 		try {
-			String result = service.groupMovieRegistration(List.of(new Movie("MAJOR", "2022", 5.0f),
-					                                                new Movie("K L RAHUL", "2022", 5.0f),
-					                                                new Movie("URI", "2022", 4.5f),
-					                                                new Movie("KARTHEKEYA", "2022", 4.8f),
-					                                                new Movie("AVATAR", "2014", 4.2f),
+			String result = service.groupMovieRegistration(List.of(new Movie("AVATAR", "2014", 4.2f),
 					                                                new Movie("PUSHPA", "2022", 4.6f),
-					                                                new Movie("JUSTICE", "2008", 3.9f),
-					                                                new Movie("KGF", "2022", 4.8f),
-					                                                new Movie("ASURA", "2015", 3.3f),
 					                                                new Movie("RRR", "2022", 4.4f),
 					                                                new Movie("BHAGIRATHA", "2016", 3.8f),
 					                                                new Movie("GAALODU", "2022", 3.8f),
-					                                                new Movie("ROBO", "2012", 4.1f),
-					                                                new Movie("MIRCHI", "2014", 4.2f),
-					                                                new Movie("EEGA", "2014", 3.5f),
 					                                                new Movie("SOFTWARESUDHEER", "2020", 2.8f)));
 			System.out.println("List Of Movies = "+result);
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
-		*/
+		
 		
 		
 		System.out.println("\n=========================Partially opj Updating the record======================================\n");
@@ -216,7 +206,7 @@ public class CrudReportTestRunner implements CommandLineRunner {
 	     
 	     
 	     System.out.println("\n=========================Delete Movies By List Of Id's======================================\n");
-			
+			/*
 			
 			try {
 			System.out.println(service.removeMoviesByListOfIds(List.of(1956,1957)));
@@ -226,7 +216,7 @@ public class CrudReportTestRunner implements CommandLineRunner {
 				e.printStackTrace();
 			}
 			
-	     
+			*/
 		
 	}
 
