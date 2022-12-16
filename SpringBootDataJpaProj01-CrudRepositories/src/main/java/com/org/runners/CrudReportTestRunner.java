@@ -25,7 +25,7 @@ public class CrudReportTestRunner implements CommandLineRunner {
 		mov.setRating(4.8f);
 		
 		try {
-//			System.out.println(service.registerMovie(movie));
+			System.out.println(service.registerMovie(mov));
 			System.out.println(service.fetchNumberOfRecords());
 //			System.out.println(service.checkById(952));
 			
@@ -130,7 +130,7 @@ public class CrudReportTestRunner implements CommandLineRunner {
 		
 		
 		System.out.println("\n==========================Saving all the Movies======================================\n");
-		
+		/*
 		
 		try {
 			String result = service.groupMovieRegistration(List.of(new Movie("AVATAR", "2014", 4.2f),
@@ -145,7 +145,7 @@ public class CrudReportTestRunner implements CommandLineRunner {
 		}
 		
 		
-		
+		*/
 		System.out.println("\n=========================Partially opj Updating the record======================================\n");
 	
 		/*
