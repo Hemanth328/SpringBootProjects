@@ -1,0 +1,16 @@
+%PDF-1.4
+%����
+1 0 obj
+<</Creator (Chromium)
+/Producer (Skia/PDF m90)
+/CreationDate (D:20221201133523+00'00')
+/ModDate (D:20221201133523+00'00')>>
+endobj
+3 0 obj
+<</ca 1
+/BM /Normal>>
+endobj
+4 0 obj
+<</Type /Pattern
+/PatternType 2
+/Matrix [.750315
